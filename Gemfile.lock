@@ -1,0 +1,17 @@
+GIT
+  remote: git://github.com/newrelic/newrelic_api.git
+  revision: 916b8ad0582acc38b04bf92a63c663c276371b04
+  specs:
+    newrelic_api (1.2.4)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    curb (0.8.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  curb
+  newrelic_api!
