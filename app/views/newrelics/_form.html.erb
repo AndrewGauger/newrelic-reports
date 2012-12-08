@@ -1,0 +1,29 @@
+<%= form_for(@newrelic) do |f| %>
+  <% if @newrelic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@newrelic.errors.count, "error") %> prohibited this newrelic from being saved:</h2>
+
+      <ul>
+      <% @newrelic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :api_key %><br />
+    <%= f.text_field :api_key %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br />
+    <%= f.text_field :account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :app_id %><br />
+    <%= f.text_field :app_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

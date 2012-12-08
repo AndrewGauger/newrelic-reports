@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Newrelic.create(:name => "rejuvenation", :app_id => "1139420", :account_id => "118846", :api_key => "9bd5dc8971a4f9a0a7d3e6f35dc25b46c6fc3d57267f925")

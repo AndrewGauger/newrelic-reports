@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Api key:</b>
+  <%= @newrelic.api_key %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @newrelic.account_id %>
+</p>
+
+<p>
+  <b>App:</b>
+  <%= @newrelic.app_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_newrelic_path(@newrelic) %> |
+<%= link_to 'Back', newrelics_path %>

@@ -1,0 +1,1 @@
+#<URI::HTTPS:0x007fc46654f9c0 URL:https://api.newrelic.com/api/v1/accounts/118846/metrics/data.json?app_id=1139420&begin=2012-11-23T08:24:23Z&end=2012-11-30T08:24:23Z&metrics=Controller/product_builders/show&field=average_response_time>

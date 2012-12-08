@@ -1,4 +1,8 @@
 PerfAnalysis::Application.routes.draw do
+  resources :newrelics
+  resources :metrics
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

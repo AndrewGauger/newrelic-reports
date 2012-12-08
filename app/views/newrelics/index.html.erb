@@ -1,0 +1,27 @@
+<h1>Listing newrelics</h1>
+
+<table>
+  <tr>
+    <th>Api key</th>
+    <th>Account</th>
+    <th>App</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @newrelics.each do |newrelic| %>
+  <tr>
+    <td><%= newrelic.api_key %></td>
+    <td><%= newrelic.account_id %></td>
+    <td><%= newrelic.app_id %></td>
+    <td><%= link_to 'Show', newrelic %></td>
+    <td><%= link_to 'Edit', edit_newrelic_path(newrelic) %></td>
+    <td><%= link_to 'Destroy', newrelic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Newrelic', new_newrelic_path %>
